@@ -1,0 +1,107 @@
+$font-color:rgb(93, 94, 94);
+
+.tariff__card {
+    width: 180px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tariff__title {
+    text-align: center;
+    padding: 13px 10px;
+    border: solid 1px #fff;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+.tariff__titleBlue {
+    background-color: #18a3a1;
+}
+
+.tariff__titleGreen {
+    background-color: #139a72;
+}
+
+.tariff__titleRed {
+    background-color: #983210;
+}
+
+.tariff__titleBlack {
+    background-color: #0b0c0c;
+}
+
+.tariff__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tariff__price_wrapper {
+    padding: 40px 10px;
+}
+
+.tariff__price_wrapperBlue {
+    background-color: #28d1ce;
+}
+
+.tariff__price_wrapperGreen {
+    background-color: #19c390;
+}
+
+.tariff__price_wrapperRed {
+    background-color: #bd3e13;
+}
+
+.tariff__price_wrapperBlack {
+    background-color: #1c1e1e;
+}
+
+.tariff__price{
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: "руб";
+        position: absolute;
+        left: 7%;
+        top: 5%;
+        font-size: 12px;    
+    }
+
+    &::after {
+        content: "/мес";
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        font-size: 12px;    
+    }
+}
+
+.tariff__traffic {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 12px;
+    color: $font-color;
+}
+
+.tariff__description {
+    padding: 10px 10px;
+    text-align: center;
+    color: $font-color;
+    line-height: 25px;
+    font-size: 12px;
+    background-color: rgb(221, 224, 224);
+}
+
+.tariff__cardSelected {
+    transform: scale(1.05);
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(255,255,255),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
