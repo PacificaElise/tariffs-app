@@ -10,7 +10,7 @@ const tariffs = [
 ]
 
 function App() {
-  const [id, setId] = useState(tariffs[0].id);
+  //const [id, setId] = useState(tariffs[0].id);
 
   return (
     <div className={styles.app}>
@@ -18,12 +18,12 @@ function App() {
           tariffs.map((tariff)=>
           <TariffCard
             key={tariff.id}
-            id={id}
+            //id={id}
             color={tariff.color}
             title={tariff.title}
             price={tariff.price}
             traffic={tariff.traffic}
-            onChangeID = {(value) => setId(value)}
+            //onChangeID = {(value) => setId(value)}
             />
           )
       }
